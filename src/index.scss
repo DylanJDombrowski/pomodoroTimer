@@ -4,6 +4,13 @@ $secondary-color: #ffeb3b;
 $background-color: #212121;
 $font-stack: Helvetica, sans-serif;
 
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: white;
+}
 .timer {
   background-color: $background-color;
   color: $primary-color;

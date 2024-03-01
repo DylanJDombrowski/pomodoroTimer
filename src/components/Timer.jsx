@@ -31,10 +31,8 @@ const TimerComponent = ({
           return prevTimeLeft - 1;
         });
       }, 1000);
-    } else if (!isRunning && timerMode === "Session") {
-      // Reset to session length if timer is not running and it's in session mode
-      setTimeLeft(sessionLength);
     }
+
     return () => clearInterval(interval);
   }, [isRunning, sessionLength, breakLength, timerMode]);
 
